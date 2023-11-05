@@ -12,6 +12,7 @@ int main()
     p0 = (char*)p;
     printf("size of char is %d bytes\n", sizeof(char));
     printf("Address = %d, value = %d\n", p0, *p0);
+    printf("%d", &p0);
 
 
     return 0;
