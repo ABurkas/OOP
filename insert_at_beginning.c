@@ -1,20 +1,14 @@
 #include<stdio.h>
 #include<stdlib.h>
 
+void Increment(int *a){
+    *a += 1;
+}
+
 int main()
 {   
-    int x = 5;
-    int *p;
-    p = &x;
-    printf("%d\n", &x);
-    *p = 6;
-    printf("%d\n", *p);
-    int **q;
-    q = &p;
-    printf("%d\n", *(*q));
-    int ***r;
-    r = &q;
-    printf("%d", r);
-
+    int a = 10;
+    Increment(&a);
+    printf("%d", a);
     return 0;
 }
